@@ -69,7 +69,7 @@
       { name: '河南省', region: '官话', yinping: 54 }
     ];
 
-    fetch('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json')
+    fetch('./data/100000_full.json')
       .then(res => res.json())
       .then(geoJson => {
         chart.hideLoading();
